@@ -3,7 +3,7 @@ This python function is an implementation of the following paper: https://ieeexp
 
 This program could learn matrix A and lyapunov parameter P from data.
 
-The demo could be found at the bottom of linear_ds_o
+The demo could be found at the bottom of linear_ds_opt
 
 ## Function Explanation
 
