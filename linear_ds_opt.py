@@ -52,7 +52,6 @@ def calculate_right_inv(V):
 
 if __name__ == '__main__':
     A_matrix = np.array([[-1, 3], [0, -0.5]])
-    Data = np.load('problematic_data.npy')[0:23]
     init_point = np.array([0.1, 0.1], dtype=np.float64)
     dt = 0.01
     samples = generate_ds(A_matrix, init_point, dt, 51, 0, [], 0)

@@ -25,8 +25,9 @@ def generate_ds(A_matrix, initial_point, dt, max_iter, do_plot, A_rep, rep_plot)
     samples = samples[:cur_step].T
     if do_plot:
         if dim == 2:
-            plt.plot(samples[0], samples[1])
-            plt.scatter(initial_point[0], initial_point[1], c='r', label='generated_trajectory')
+            plt.plot(samples[0], samples[1], label='generated trajectory')
+            plt.scatter(initial_point[0], initial_point[1], c='r', label='Initial Point')
+
     if rep_plot == 1:
         cur_position = initial_point.copy()
         cur_step_1 = 1
@@ -40,6 +41,7 @@ def generate_ds(A_matrix, initial_point, dt, max_iter, do_plot, A_rep, rep_plot)
         if dim == 2:
             reproduced_traj = reproduced_traj.T
             plt.plot(reproduced_traj[0], reproduced_traj[1], label='reproduced trajectory')
+    plt.legend()
     plt.show()
     return samples
 
